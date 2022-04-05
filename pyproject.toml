@@ -1,21 +1,21 @@
 [tool.poetry]
-authors = ["long2ice <long2ice@gmail.com>"]
+authors = ["Brian Thorne <brian@hardbyte.nz>"]
 description = "A request rate limiter for fastapi"
-documentation = "https://github.com/long2ice/fastapi-limiter"
-homepage = "https://github.com/long2ice/fastapi-limiter"
+documentation = "https://github.com/hardbyte/fastapi-ratelimit"
+homepage = "https://github.com/hardbyte/fastapi-ratelimit"
 include = ["CHANGELOG.md", "LICENSE", "README.md"]
-keywords = ["fastapi", "limiter"]
-license = "Apache2.0"
-name = "fastapi-limiter"
+keywords = ["fastapi", "limiter", "ratelimit"]
+license = "Apache-2.0"
+name = "fastapi-ratelimit"
 packages = [
-  {include = "fastapi_limiter"},
+  {include = "fastapi_ratelimit"},
 ]
 readme = "README.md"
-repository = "https://github.com/long2ice/fastapi-limiter.git"
-version = "0.1.5"
+repository = "https://github.com/hardbyte/fastapi-ratelimit.git"
+version = "0.1.0"
 
 [tool.poetry.dependencies]
-aioredis = ">=2.0.0b1"
+aioredis = "^2.0.1"
 fastapi = "*"
 python = "^3.7"
 

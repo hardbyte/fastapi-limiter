@@ -2,8 +2,8 @@ import aioredis
 import uvicorn
 from fastapi import Depends, FastAPI
 
-from fastapi_limiter import FastAPILimiter
-from fastapi_limiter.depends import RateLimiter
+from fastapi_ratelimit import FastAPILimiter
+from fastapi_ratelimit.depends import RateLimiter
 
 app = FastAPI()
 
